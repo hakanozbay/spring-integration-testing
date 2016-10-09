@@ -16,10 +16,10 @@
 
 <context:component-scan base-package="com.hakanozbay.example.spring.integration"/>
 
+<!-- MESSAGING WORKFLOW -->
 <int:gateway id="gateway" service-interface="com.hakanozbay.example.spring.integration.Gateway">
 	<int:method name="sendMessage" request-channel="messageChannel"/>
 </int:gateway>
-
 
 <int:service-activator input-channel="messageChannel" ref="messageReceiver" method="receiveMessage"/>
 
