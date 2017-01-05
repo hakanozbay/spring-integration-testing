@@ -23,7 +23,7 @@ There are several files in the source tree under the src/main/ root folder:
 - **spring-integration-context.xml**: The Spring Integration context file that defines the messaging workflow and lifecycle of the application; the message channel; the definition of the components and relationship with each other; component activation and tying it all into place.
 
 ### Running the application
-Run the `App` class as a Java application. It will print out several Spring Framework INFO messages during the start up and shut down of the application.  
+Run the `App` class as a Java application. It will print out several Spring Framework INFO thershold log entries during the start up and shut down of the application.  
 In between the Spring log messages, you will see in the console the following output: 
 
 ```
@@ -40,7 +40,7 @@ There are two files in the source tree under the src/test root folder:
 
 
 ### Running the test
-Run the `MessageReceiverTest` as a JUnit Test. It will print out several Spring Framework INFO messages during the start up and shut down of the application.  
+Run the `MessageReceiverTest` as a JUnit Test. It will print out several Spring Framework INFO thershold log entries during the start up and shut down of the application.  
 In between the Spring log messages, you will see in the console the following output: 
 
 ```
