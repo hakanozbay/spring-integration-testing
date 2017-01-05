@@ -23,8 +23,7 @@
 
 <int:service-activator input-channel="messageChannel" ref="messageReceiver" method="receiveMessage"/>
 
-<!-- CHANNELS AND EXECUTORS -->
-<int:channel id="messageChannel"><int:dispatcher task-executor="messageChannelExecutor"/></int:channel>
-<task:executor id="messageChannelExecutor" pool-size="1" queue-capacity="5" rejection-policy="CALLER_RUNS"/>
+<!-- CHANNELS -->
+<int:channel id="messageChannel"/>
 
 </beans>

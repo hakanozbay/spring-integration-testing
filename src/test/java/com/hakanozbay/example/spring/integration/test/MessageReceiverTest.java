@@ -43,7 +43,7 @@ public class MessageReceiverTest
 		
 		assertEquals(textMessage, receivedMessage);
 		
-		System.out.println("Message received in test channel -" + textMessage);
+		System.out.println("Message received in test channel - " + textMessage);
 		
 	}
 }
