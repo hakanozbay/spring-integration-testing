@@ -38,7 +38,7 @@ At this point the application has successfully generated a message and sent on a
 
 ![WireTap Workflow Diagram](wire-tap-integration-workflow.png)
 
-The original application workflow is preserved. There is an additional message channel That a copy of the message is delivered to which is setup as the Wire Tap.
+The original application workflow is preserved. There is an additional message channel that a copy of the message is delivered to which is setup as the Wire Tap.
 
 There are two files in the source tree under the src/test root folder:
 - **spring-integration-test-context.xml**: The Spring Integration context file that is loaded for the test only. It imports the application's **spring-integration-context.xml** file but also creates the Wire Tap and the additional channel to copy the message onto for the test to read and inspect from. 
