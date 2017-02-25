@@ -14,6 +14,8 @@ The strategy is to utilize the [Wire Tap][] pattern to copy messages placed on a
 
 ## Walkthrough of the application workflow
 
+![Integration Workflow Diagram](integration-workflow.png)
+
 The application workflow itself is simple: The application generates a `Hello World!` message that is sent through a [Gateway][] onto a [Message Channel][] that is consumed by a [Message Endpoint][] to print out the message to console.
 
 There are several files in the source tree under the src/main/ root folder:
