@@ -36,6 +36,8 @@ At this point the application has successfully generated a message and sent on a
 
 ## Walkthrough of the test workflow
 
+![WireTap Workflow Diagram](wire-tap-integration-workflow.png)
+
 There are two files in the source tree under the src/test root folder:
 - **spring-integration-test-context.xml**: The Spring Integration context file that is loaded for the test only. It imports the application's **spring-integration-context.xml** file but also creates the Wire Tap and the additional channel to copy the message onto for the test to read and inspect from. 
 - **MessageReceiverTest.java**: The JUnit test class that sends a test message through the gateway, consumes the message from the additional channel that the Wire Tap has delivered to and verifies the message is the same as what was sent through the gateway. 
