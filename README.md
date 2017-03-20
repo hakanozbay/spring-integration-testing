@@ -1,10 +1,10 @@
 # Testing Spring Integration Workflows
 
-This is an example demonstration of testing messaging workflows in the [Spring Integration] [] framework to verify system behaviour, workflows or sequences at various points of the system lifecycle.
+This is an example demonstration of testing messaging workflows in the [Spring Integration][] framework to verify system behaviour, workflows or sequences at various points of the system lifecycle.
 
 ## Overview 
 
-Spring Integration is an extension of Spring that supports [Enterprise Integration Patterns] []. It facilitates easy implementation of patterns but also implementation of intra jvm messaging, scheduling and remoting to external systems.
+Spring Integration is an extension of Spring that supports [Enterprise Integration Patterns][]. It facilitates easy implementation of patterns but also implementation of intra jvm messaging, scheduling and remoting to external systems.
 
 Writing integration tests that verify individual messaging components within the framework is not simple, requiring a strategy to ensure correctness of the workflow based on sequential and temporal aspects naturally.
 
